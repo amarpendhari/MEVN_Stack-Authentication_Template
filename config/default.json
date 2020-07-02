@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://Astro786:astro786@mevnstack-myne9.mongodb.net/<dbname>?retryWrites=true&w=majority",
+  "jwtSecret": "Secret"
+}
