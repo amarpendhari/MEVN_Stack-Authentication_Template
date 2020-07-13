@@ -6,7 +6,7 @@
 
 ```
 To use the MEVN Authentication Template you need your own DataBase.
-Create your Database in no time using [MongoDB Atlas - The Global Cloud Database](https://docs.atlas.mongodb.com/getting-started/)
+Create your Database in no time using https://docs.atlas.mongodb.com/getting-started/
 * Once you have Created DataBase
   * Go to the Cluster Created > Below SANDBOX click on Connect Button > Select Connect your Application
   * Copy Link, Example (mongodb+srv://<username>:<password>@mevnstack-myne9.mongodb.net/<dbname>?retryWrites=true&w=majority)
