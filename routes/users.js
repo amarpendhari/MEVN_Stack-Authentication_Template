@@ -16,10 +16,10 @@ router.post(
     check("name", " Name is Required")
       .not()
       .isEmpty(),
-    check("email", "Please include avalid email").isEmail(),
+    check("email", "Please include a valid Email").isEmail(),
     check(
       "password",
-      "please enter a Passowrd with 6 or more charcters"
+      "Please enter a Passowrd with 6 or more charcters"
     ).isLength({ min: 6 })
   ],
   async (req, res) => {
@@ -31,7 +31,7 @@ router.post(
     try {
       let user = await User.findOne({ email });
       if (user) {
-        return res.status(400).json({ msg: "User Already exists" });
+        return res.status(400).json({ msg: "User Already Exists" });
       }
 
       user = new User({
