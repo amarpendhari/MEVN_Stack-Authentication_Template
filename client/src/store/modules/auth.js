@@ -69,10 +69,8 @@ const actions = {
     try {
       const res = await axios.get("http://localhost:5000/api/auth");
       commit("setUser", res.data);
-      console.log(res.data);
       vm.$router.push({ path: "/dashboard" }).catch(() => {});
     } catch (err) {
-      console.log(err);
       //vm.$router.push({ path: "/login" });
       vm.$router.go(-1);
       commit("Alert", err.response.data.msg);
